@@ -12,7 +12,7 @@ void Molinete::dejarEntrar() {
 
 void Molinete::dejarSalir() {
 
-	if (personasDentro > 0) {
+	if (existenPersonasDentro()) {
 
 		personasDentro--;
 	}
