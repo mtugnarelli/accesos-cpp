@@ -1,5 +1,10 @@
 #include "Molinete.h"
 
+Molinete::Molinete() {
+
+	personasDentro = 0;
+}
+
 void Molinete::dejarEntrar() {
 
 	personasDentro++;

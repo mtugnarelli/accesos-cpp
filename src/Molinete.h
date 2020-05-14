@@ -17,6 +17,13 @@ class Molinete {
 	public:
 
 		/*
+		 * pre : no existen personas dentro del lugar.
+		 * post: el Molinete queda habilitado para controlar el acceso de
+		 * 		 personas, considerando que no existen aún personas dentro.
+		 */
+		Molinete();
+
+		/*
 		 * post: permite la entrada de una persona.
 		 */
 		void dejarEntrar();
