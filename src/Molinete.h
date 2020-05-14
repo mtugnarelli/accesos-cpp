@@ -10,6 +10,10 @@
  */
 class Molinete {
 
+	private:
+
+		int personasDentro;
+
 	public:
 
 		/*

@@ -2,18 +2,20 @@
 
 void Molinete::dejarEntrar() {
 
+	personasDentro++;
 }
 
 void Molinete::dejarSalir() {
 
+	personasDentro--;
 }
 
 int Molinete::contarPersonasDentro() {
 
-	return 0;
+	return personasDentro;
 }
 
 bool Molinete::existenPersonasDentro() {
 
-	return false;
+	return (personasDentro > 0);
 }
