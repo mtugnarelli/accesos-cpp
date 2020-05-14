@@ -12,3 +12,8 @@ int Molinete::contarPersonasDentro() {
 
 	return 0;
 }
+
+bool Molinete::existenPersonasDentro() {
+
+	return false;
+}

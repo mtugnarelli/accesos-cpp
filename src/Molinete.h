@@ -28,6 +28,13 @@ class Molinete {
 		 * 		 entrar pero no dejó salir.
 		 */
 		int contarPersonasDentro();
+		
+		/*
+		 * post: indica si existen personas que hayan entrado y
+		 * 		 no hayan salido.
+		 */
+		bool existenPersonasDentro();
+		
 };
 
 #endif /* MOLINETE_H_ */
