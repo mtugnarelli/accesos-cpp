@@ -16,6 +16,7 @@ class Molinete {
 	private:
 
 		int personasDentro;
+		int limiteDePersonasDentro;
 
 	public:
 
@@ -25,6 +26,15 @@ class Molinete {
 		 * 		 personas, considerando que no existen aún personas dentro.
 		 */
 		Molinete();
+
+		/*
+		 * pre : no existen personas dentro del lugar.
+		 *       'cantidadLimiteDePersonasDentro' es mayor a 0.
+		 * post: el Molinete queda habilitado para controlar el acceso de
+		 * 		 personas, considerando que no existen aún personas dentro y
+		 * 		 limitando la entrada a 'cantidadLimiteDePersonasDentro'
+		 */
+		Molinete(int cantidadLimiteDePersonasDentro);
 
 		/* 
 		 * pre : caben más personas dentro.
