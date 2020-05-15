@@ -40,10 +40,10 @@ int Molinete::contarPersonasDentro() {
 
 bool Molinete::existenPersonasDentro() {
 
-	return (personasDentro > 0);
+	return (contarPersonasDentro() > 0);
 }
 
 bool Molinete::cabenMasPersonasDentro() {
 
-	return (personasDentro < limiteDePersonasDentro);
+	return (contarPersonasDentro() < limiteDePersonasDentro);
 }
