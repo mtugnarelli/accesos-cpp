@@ -15,7 +15,8 @@ class Molinete {
 
 	private:
 
-		int personasDentro;
+		int personasQueEntraron;
+		int personasQueSalieron;
 		int limiteDePersonasDentro;
 
 	public:
