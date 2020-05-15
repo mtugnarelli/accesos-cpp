@@ -7,7 +7,7 @@ int main() {
 
 	cout << ".:: Accesos ::." << endl;
 
-	Molinete molineteDeAcceso;
+	Molinete molineteDeAcceso(10);
 
 	char opcion;
 
