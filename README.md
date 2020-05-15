@@ -5,6 +5,8 @@ Accesos cpp
 
 Desarrollar una aplicación que permita contabilizar la cantidad de personas que entran y salen de un lugar.
 
+![Molinete](img/molinete.jpg)
+
 ## Solución
 
 ### Punto 1 - Implementación
