@@ -74,6 +74,14 @@ class Molinete {
 		 */
 		int obtenerMaximaCantidadDePersonasDentro();
 		
+	private:
+		
+		/* pre : entró una persona.
+		 * post: actualiza la máxima cantidad de personas dentro
+		 *       considerando la cuenta actual y el máximo histórico.
+		 */
+		void actualizarMaximaCantidadDePersonasDentro();
+		
 };
 
 #endif /* MOLINETE_H_ */

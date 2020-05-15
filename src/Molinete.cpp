@@ -27,9 +27,15 @@ void Molinete::dejarEntrar() {
 
 		personasQueEntraron++;
 
-		if (contarPersonasDentro() > maximaCantidadDePersonasDentro) {
-			maximaCantidadDePersonasDentro = contarPersonasDentro();
-		}
+		actualizarMaximaCantidadDePersonasDentro();
+	}
+}
+
+void Molinete::actualizarMaximaCantidadDePersonasDentro() {
+
+	if (contarPersonasDentro() > maximaCantidadDePersonasDentro) {
+
+		maximaCantidadDePersonasDentro = contarPersonasDentro();
 	}
 }
 
