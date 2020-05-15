@@ -26,7 +26,11 @@ int main() {
 				break;
 
 			case 'T' : cout << "Total de personas en el interior: "
-							<< molineteDeAcceso.contarPersonasDentro() << endl;
+							<< molineteDeAcceso.contarPersonasDentro() 
+							<< endl
+							<< "Máxima cantidad dentro: "
+							<< molineteDeAcceso.obtenerMaximaCantidadDePersonasDentro()
+							<< endl;
 				break;
 
 			default:

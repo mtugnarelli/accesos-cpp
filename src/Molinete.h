@@ -18,6 +18,7 @@ class Molinete {
 		int personasQueEntraron;
 		int personasQueSalieron;
 		int limiteDePersonasDentro;
+		int maximaCantidadDePersonasDentro;
 
 	public:
 
@@ -65,6 +66,13 @@ class Molinete {
 		 * post: indica si es posible que entren más personas al lugar.
 		 */
 		bool cabenMasPersonasDentro();
+		
+		/*
+		 * post: devuelve la maxima cantidad de personas
+		 * 		 que en algún momento estuvieron dentro.
+		 *
+		 */
+		int obtenerMaximaCantidadDePersonasDentro();
 		
 };
 
