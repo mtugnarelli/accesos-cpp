@@ -7,7 +7,10 @@ Molinete::Molinete() {
 
 void Molinete::dejarEntrar() {
 
-	personasDentro++;
+	if (cabenMasPersonasDentro()) {
+
+		personasDentro++;
+	}
 }
 
 void Molinete::dejarSalir() {
@@ -26,4 +29,9 @@ int Molinete::contarPersonasDentro() {
 bool Molinete::existenPersonasDentro() {
 
 	return (personasDentro > 0);
+}
+
+bool Molinete::cabenMasPersonasDentro() {
+
+	return (personasDentro < LIMITE_DE_PERSONAS_DENTRO);
 }

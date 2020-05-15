@@ -1,11 +1,14 @@
 #ifndef MOLINETE_H_
 #define MOLINETE_H_
 
+#define LIMITE_DE_PERSONAS_DENTRO 1000
+
 /**
  * Un Molinete representa el mecanismo de control de acceso a un lugar,
  * contabilizando las entradas y salidas de personas.
  *
- * La cantidad de personas dentro del lugar es mayor o igual a cero.
+ * La cantidad de personas dentro del lugar es mayor o igual a cero, y
+ * menor o igual a LIMITE_DE_PERSONAS_DENTRO.
  *
  */
 class Molinete {
@@ -23,7 +26,8 @@ class Molinete {
 		 */
 		Molinete();
 
-		/*
+		/* 
+		 * pre : caben más personas dentro.
 		 * post: permite la entrada de una persona.
 		 */
 		void dejarEntrar();
@@ -45,6 +49,11 @@ class Molinete {
 		 * 		 no hayan salido.
 		 */
 		bool existenPersonasDentro();
+		
+		/*
+		 * post: indica si es posible que entren más personas al lugar.
+		 */
+		bool cabenMasPersonasDentro();
 		
 };
 
